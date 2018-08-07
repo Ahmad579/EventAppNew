@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FavouriteCell" rowHeight="256" id="KGk-i7-Jjw" customClass="FavouriteCell" customModule="EventAppNew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="256"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="255.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifb-D2-bqd" customClass="CardView" customModule="EventAppNew" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="300" height="235.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congratulation" translatesAutoresizingMaskIntoConstraints="NO" id="uw4-Ft-NNF">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="ybF-Aj-9hg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLUB NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrL-La-3AT">
+                                <rect key="frame" x="28" y="175" width="244" height="14"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="10"/>
+                                <color key="textColor" red="0.1529411765" green="0.1137254902" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="i5g-V9-24K">
+                                <rect key="frame" x="10" y="162" width="280" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="xFA-pz-fVE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLUB LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3s-on-gDT">
+                                <rect key="frame" x="28" y="191" width="244" height="14"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="10"/>
+                                <color key="textColor" red="0.1529411765" green="0.1137254902" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon-Fri,11pm - 4am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nJ-No-ZG9">
+                                <rect key="frame" x="28" y="207" width="244" height="14"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="10"/>
+                                <color key="textColor" red="0.1529411765" green="0.1137254902" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i5g-V9-24K" firstAttribute="leading" secondItem="Ifb-D2-bqd" secondAttribute="leading" constant="10" id="1br-Ey-Esp"/>
+                            <constraint firstAttribute="trailing" secondItem="uw4-Ft-NNF" secondAttribute="trailing" id="ESV-av-mQn"/>
+                            <constraint firstItem="4nJ-No-ZG9" firstAttribute="top" secondItem="M3s-on-gDT" secondAttribute="bottom" constant="2" id="IC8-Rf-vkq"/>
+                            <constraint firstItem="VrL-La-3AT" firstAttribute="top" secondItem="i5g-V9-24K" secondAttribute="bottom" constant="8" id="LCF-XL-y5E"/>
+                            <constraint firstItem="4nJ-No-ZG9" firstAttribute="leading" secondItem="M3s-on-gDT" secondAttribute="leading" id="OVD-Cg-x5l"/>
+                            <constraint firstAttribute="trailing" secondItem="VrL-La-3AT" secondAttribute="trailing" constant="28" id="PRi-Dd-GKd"/>
+                            <constraint firstItem="M3s-on-gDT" firstAttribute="trailing" secondItem="VrL-La-3AT" secondAttribute="trailing" id="ac0-uN-vaV"/>
+                            <constraint firstItem="i5g-V9-24K" firstAttribute="top" secondItem="uw4-Ft-NNF" secondAttribute="bottom" constant="2" id="fWv-Sp-9zF"/>
+                            <constraint firstAttribute="trailing" secondItem="i5g-V9-24K" secondAttribute="trailing" constant="10" id="ilf-Fe-gsw"/>
+                            <constraint firstItem="uw4-Ft-NNF" firstAttribute="top" secondItem="Ifb-D2-bqd" secondAttribute="top" id="kPK-Pu-9Wo"/>
+                            <constraint firstItem="4nJ-No-ZG9" firstAttribute="trailing" secondItem="M3s-on-gDT" secondAttribute="trailing" id="m80-0t-GZc"/>
+                            <constraint firstItem="uw4-Ft-NNF" firstAttribute="leading" secondItem="Ifb-D2-bqd" secondAttribute="leading" id="pBK-gP-gJj"/>
+                            <constraint firstItem="M3s-on-gDT" firstAttribute="top" secondItem="VrL-La-3AT" secondAttribute="bottom" constant="2" id="tay-lv-G4d"/>
+                            <constraint firstItem="VrL-La-3AT" firstAttribute="leading" secondItem="Ifb-D2-bqd" secondAttribute="leading" constant="28" id="zGx-YK-b4N"/>
+                            <constraint firstItem="M3s-on-gDT" firstAttribute="leading" secondItem="VrL-La-3AT" secondAttribute="leading" id="zpO-ml-b1u"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ifb-D2-bqd" secondAttribute="bottom" constant="10" id="2vf-KG-h5C"/>
+                    <constraint firstItem="Ifb-D2-bqd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="OJi-uK-RHr"/>
+                    <constraint firstItem="Ifb-D2-bqd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WH7-tb-HCE"/>
+                    <constraint firstAttribute="trailing" secondItem="Ifb-D2-bqd" secondAttribute="trailing" constant="10" id="XTe-uy-X7a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgOfFavourite" destination="uw4-Ft-NNF" id="Mkd-cy-Vvf"/>
+                <outlet property="lblClubLocation" destination="M3s-on-gDT" id="9dw-ox-g3q"/>
+                <outlet property="lblClubName" destination="VrL-La-3AT" id="JJJ-8s-fyd"/>
+                <outlet property="lblTime" destination="4nJ-No-ZG9" id="ybm-ZO-lW4"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="65"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="congratulation" width="289" height="302"/>
+        <image name="dot" width="264" height="3"/>
+    </resources>
+</document>
